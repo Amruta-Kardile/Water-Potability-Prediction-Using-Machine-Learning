@@ -1,0 +1,78 @@
+# 💧 Water Quality Prediction App
+
+This is a Streamlit-based web application that predicts water pollution levels based on air quality and PM2.5 metrics. The application uses a trained machine learning model to make predictions and provides users with insights into water pollution levels.
+
+## Features
+
+- **Country Selection**: Users can select a country from a list of available countries.
+- **Air Quality and PM2.5 Input**: Users can input the air quality index and average PM2.5 level.
+- **Prediction**: The model predicts the water pollution level based on the inputs.
+- **Cities List**: Displays a list of countries (cities) to choose from for prediction.
+
+## Requirements
+
+- Python 3.7+
+- Streamlit
+- Pandas
+- Scikit-learn (for the machine learning model)
+- Pickle (for model loading)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/water-quality-prediction-app.git
+   cd water-quality-prediction-app
+Create a virtual environment and activate it:
+
+bash
+Copy
+Edit
+python3 -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+Install the dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Place your trained model file (water_quality_model.pkl) and the cities dataset (Cities1.csv) in the project directory.
+
+Usage
+To run the application locally:
+
+Navigate to the project directory:
+
+bash
+Copy
+Edit
+cd water-quality-prediction-app
+Start the Streamlit app:
+
+bash
+Copy
+Edit
+streamlit run app.py
+The app will open in your default web browser.
+
+How It Works
+User Inputs: Users select a country and input the air quality index (AQI) and average PM2.5 level.
+Prediction: After clicking the "Predict" button, the model predicts the water pollution level.
+Cities List: The app displays a list of available countries from which the user can select for predictions.
+Directory Structure
+bash
+Copy
+Edit
+water-quality-prediction-app/
+│
+├── app.py                  # Main Streamlit app
+├── water_quality_model.pkl  # Trained machine learning model
+├── Cities1.csv              # Dataset with country names
+├── requirements.txt         # List of dependencies
+└── README.md                # This file
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgments
+Thanks to the Streamlit and scikit-learn teams for their amazing libraries.
+Dataset from Cities1.csv for listing available countries.
